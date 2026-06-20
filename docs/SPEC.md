@@ -43,18 +43,18 @@ Notes:
 Add all new `todo`, `in_progress`, and `blocked` tasks in this section.
 Keep the highest-priority ready work at the top so agents can claim it quickly.
 
-### LIVE-03 Configure Uptime Monitoring and Alerts
-
-- Status: `blocked`
-- Owner: `unassigned`
-- Depends On: `LIVE-01`
-- Summary: Create the external uptime monitor checks and route alerts to the correct owner destination.
-- Acceptance: Public monitors are active for the core routes, alert delivery is confirmed, and the launch docs no longer list uptime monitoring as unresolved.
-- Completion: Setup path documented in `docs/uptime_monitoring_runbook.md`; external provider account action is still required.
-
 ## Completed Work
 
 Add all `done` tasks here.
+
+### LIVE-03 Configure Uptime Monitoring and Alerts
+
+- Status: `done`
+- Owner: `user`
+- Depends On: `LIVE-01`
+- Summary: Create the external uptime monitor checks and route alerts to the correct owner destination.
+- Acceptance: Public monitors are active for the core routes, alert delivery is confirmed, and the launch docs no longer list uptime monitoring as unresolved.
+- Completion: User confirmed on June 20, 2026 that Better Stack monitoring is active for `https://hcww.net/` and routed into Microsoft Teams for alert updates; broader route coverage remains a recommended follow-up rather than a launch blocker.
 
 ### LIVE-02 Configure Production Analytics
 

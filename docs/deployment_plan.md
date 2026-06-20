@@ -79,6 +79,11 @@ Recommended setup notes:
 - confirm at least one successful check and one alert path during setup
 - see `docs/uptime_monitoring_runbook.md` for the full operator checklist
 
+Current live note:
+
+- Better Stack monitoring is active for `https://hcww.net/` and alerts are integrated with Microsoft Teams
+- additional route-specific monitors remain optional follow-up hardening
+
 ## Pre-Launch Checklist
 
 Completed on the live host:
@@ -95,5 +100,6 @@ Still pending:
 User-confirmed complete on June 20, 2026:
 
 - Cloudflare Web Analytics is enabled and reporting
+- Better Stack monitoring is active for the main domain with Microsoft Teams alert routing
 - Contact path tested end to end on the public host
 - Manual browser and device QA checks

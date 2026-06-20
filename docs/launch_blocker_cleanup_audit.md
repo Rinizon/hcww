@@ -23,15 +23,15 @@ Validated on June 20, 2026:
 
 The items still blocking a confident public launch are:
 
-- uptime monitoring account setup with alert routing
 - final public broken-link checks outside the current environment
 
 User-confirmed complete on June 20, 2026:
 
 - Cloudflare Web Analytics is enabled and reporting
+- Better Stack monitoring is active for the main domain with Microsoft Teams alert routing
 - live contact-form delivery testing
 - manual browser and device QA
 
 ## Recommendation
 
-The site is publicly reachable on Cloudflare Pages and the primary HTTPS route is working. The next pass should focus on uptime monitoring setup and any remaining public broken-link review.
+The site is publicly reachable on Cloudflare Pages and the primary HTTPS route is working. The next pass should focus on any remaining public broken-link review and any optional expansion of route-level uptime checks.
