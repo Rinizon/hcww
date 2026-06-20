@@ -3,6 +3,7 @@ const navigationItems = [
   { slug: "about", href: "/about/", label: "About" },
   { slug: "services", href: "/services/", label: "Services" },
   { slug: "pricing", href: "/pricing/", label: "Pricing" },
+  { slug: "blog", href: "/blog/", label: "Blog" },
   { slug: "contact", href: "/contact/", label: "Contact" },
 ];
 
@@ -43,6 +44,7 @@ function renderFooter() {
           <p>Modern websites, dependable support, and senior technical help for Hill Country businesses.</p>
           <p class="footer-note">Direct communication, clear next steps, and long-term support without corporate runaround.</p>
           <div class="footer-links">
+            <a href="/blog/">Blog</a>
             <a href="/privacy/">Privacy Policy</a>
             <a href="/terms/">Terms of Service</a>
           </div>

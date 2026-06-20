@@ -43,11 +43,47 @@ Notes:
 Add all new `todo`, `in_progress`, and `blocked` tasks in this section.
 Keep the highest-priority ready work at the top so agents can claim it quickly.
 
-No active tasks. Add new `todo`, `in_progress`, or `blocked` work here when new launch or post-launch priorities are ready to queue.
+No active tasks. Add new `todo`, `in_progress`, or `blocked` work here when new post-launch priorities are ready to queue.
 
 ## Completed Work
 
 Add all `done` tasks here.
+
+### PH8-01 Build Blog Landing and Content Entry Points
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH7-03`
+- Summary: Create a blog landing page and add the shared routing updates needed to make long-term content growth discoverable on the site.
+- Acceptance: The site includes a crawlable blog landing page with clear post entry points, and sitewide navigation or footer routing exposes the blog path cleanly.
+- Completion: Added `/blog/`, exposed the blog through shared navigation and footer links, and created a crawlable blog landing page with clear article entry points.
+
+### PH8-02 Publish Initial Blog Post Pipeline
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH8-01`
+- Summary: Publish the first set of static blog posts so the site has a real example of the content-growth model rather than an empty section.
+- Acceptance: The repo includes at least two real blog post pages with consistent structure, metadata, internal links, and content aligned with the documented blog ideas.
+- Completion: Added two starter posts at `/blog/5-signs-your-business-website-needs-an-update/` and `/blog/what-is-managed-it-support/` with article metadata, internal service links, and consistent static structure.
+
+### PH8-03 Document Ongoing Content Maintenance Workflow
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH8-01`, `PH8-02`
+- Summary: Document the repeatable workflow for adding blog posts, refreshing services copy, and maintaining the static site over time.
+- Acceptance: The repo contains a concise content-maintenance guide that explains how to add posts, update sitemap coverage, and keep recurring site content current.
+- Completion: Added `docs/content_maintenance_workflow.md` with the repeatable process for publishing posts, updating services content, and keeping sitemap and route coverage current.
+
+### PH8-04 Validate Phase 8 Growth Foundation
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH8-01`, `PH8-02`, `PH8-03`
+- Summary: Review the blog setup and maintenance workflow together to confirm the site now has a practical path for post-launch content growth.
+- Acceptance: The blog landing, starter posts, and maintenance workflow are verified together, and any remaining growth limitations are documented clearly.
+- Completion: Added `docs/phase8_growth_foundation_audit.md`, updated the sitemap with the new blog routes, and confirmed the site now has a workable static-friendly content growth path.
 
 ### PH7-01 Strengthen On-Page SEO and Local Signals
 
