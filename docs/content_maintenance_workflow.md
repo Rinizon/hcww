@@ -35,7 +35,7 @@ When contact workflows or launch operations change:
 
 1. Update `contact/index.html`.
 2. Update `assets/js/site-shell.js` if footer contact information changes.
-3. Update `docs/phase6_operations_baseline.md` when the operating model changes.
+3. Update `docs/deployment_plan.md` and any current launch-readiness notes when the operating model changes.
 4. Update legal pages if the inquiry-handling or data-use model changes materially.
 
 ## 4. Sitemap and Crawlability Checklist

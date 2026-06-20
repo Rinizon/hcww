@@ -108,7 +108,7 @@ Add all `done` tasks here.
 - Depends On: `PH8-01`, `PH8-02`, `PH8-03`
 - Summary: Review the blog setup and maintenance workflow together to confirm the site now has a practical path for post-launch content growth.
 - Acceptance: The blog landing, starter posts, and maintenance workflow are verified together, and any remaining growth limitations are documented clearly.
-- Completion: Added `docs/phase8_growth_foundation_audit.md`, updated the sitemap with the new blog routes, and confirmed the site now has a workable static-friendly content growth path.
+- Completion: Added a Phase 8 growth-foundation audit, updated the sitemap with the new blog routes, and confirmed the site now has a workable static-friendly content growth path.
 
 ### PH7-01 Strengthen On-Page SEO and Local Signals
 
@@ -135,7 +135,7 @@ Add all `done` tasks here.
 - Depends On: `PH7-01`, `PH7-02`
 - Summary: Review the site against the Phase 7 goals and produce a clear checklist of what is complete, what was validated, and what still blocks launch.
 - Acceptance: The repo contains a concise launch-readiness audit that covers SEO, accessibility, broken-link risk, route coverage, and remaining blockers for public release.
-- Completion: Added `docs/phase7_launch_readiness_audit.md` with the Phase 7 outcome review, launch checklist, source-level validation notes, and remaining launch blockers.
+- Completion: Added a Phase 7 launch-readiness audit with the outcome review, launch checklist, source-level validation notes, and remaining launch blockers.
 
 ### PH6-01 Implement Contact Form Behavior and Inquiry Flow
 
@@ -162,7 +162,7 @@ Add all `done` tasks here.
 - Depends On: `PH6-01`, `PH6-02`
 - Summary: Record the launch-ready baseline for inquiry handling, business hours, scheduling stance, analytics direction, and uptime monitoring so operations are explicit before launch.
 - Acceptance: The repo documents the selected contact-handling workflow, business-hours wording, scheduling decision, analytics direction, and monitoring plan for launch preparation.
-- Completion: Added `docs/phase6_operations_baseline.md` with the launch-direction inquiry flow, business-hours wording, no-scheduling decision, analytics direction, and uptime-monitoring baseline.
+- Completion: Documented the Phase 6 launch-direction inquiry flow, business-hours wording, no-scheduling decision, analytics direction, and uptime-monitoring baseline.
 
 ### PH6-04 Validate Phase 6 Operations Readiness
 
@@ -171,7 +171,7 @@ Add all `done` tasks here.
 - Depends On: `PH6-01`, `PH6-02`, `PH6-03`
 - Summary: Review the operational and legal additions together and capture any remaining launch-blocking gaps before Phase 7.
 - Acceptance: The updated contact flow, legal pages, and operations baseline are verified together, and any remaining launch blockers are documented clearly for the next phase.
-- Completion: Added `docs/phase6_operations_readiness_audit.md` to record the completed operational baseline, legal coverage, validation notes, and the remaining launch blockers for the next phase.
+- Completion: Recorded the completed Phase 6 operational baseline, legal coverage, validation notes, and the remaining launch blockers for the next phase.
 
 ### PH4-01 Build Website Design and Hosting Detail Page
 
@@ -216,7 +216,7 @@ Add all `done` tasks here.
 - Depends On: `PH4-01`, `PH4-02`, `PH4-03`, `PH4-04`
 - Summary: Review the finished service-detail and pricing pages as a coordinated mid-funnel experience and capture the remaining proof and local-trust needs that are now deferred while the roadmap moves to Phase 6.
 - Acceptance: The service-detail pages and pricing page work together as a qualified-lead path, and any remaining needs for portfolio, testimonials, or service-area proof are documented clearly.
-- Completion: Added `docs/phase4_sales_pages_audit.md`, confirmed pricing consistency across the new detail pages, validated the updated Pricing route locally with `200 OK`, and documented the deferred proof and local-trust work while the roadmap moves directly to Phase 6.
+- Completion: Added a Phase 4 sales-pages audit, confirmed pricing consistency across the new detail pages, validated the updated Pricing route locally with `200 OK`, and documented the deferred proof and local-trust work while the roadmap moves directly to Phase 6.
 
 ### PH3-01 Audit Core Marketing Pages Against Phase 3 Goals
 
@@ -225,7 +225,7 @@ Add all `done` tasks here.
 - Depends On: `PH2-08`
 - Summary: Compare the current homepage, About, Services, and Contact pages against the Phase 3 goals and identify the highest-value structural and conversion gaps.
 - Acceptance: The repo contains a concise Phase 3 audit that maps each core page to its intended purpose, current strengths, remaining gaps, and the recommended implementation order for follow-up tasks.
-- Completion: Added `docs/phase3_core_pages_audit.md` and used it to capture the current page strengths, funnel gaps, and the Phase 4 dependencies that remain after the Phase 3 pass.
+- Completion: Added a Phase 3 core-pages audit and used it to capture the current page strengths, funnel gaps, and the Phase 4 dependencies that remain after the Phase 3 pass.
 
 ### PH3-02 Strengthen Homepage Visitor Journey
 
@@ -270,7 +270,7 @@ Add all `done` tasks here.
 - Depends On: `PH3-02`, `PH3-03`, `PH3-04`, `PH3-05`
 - Summary: Review the updated core marketing pages together as a single visitor journey and record any remaining dependencies that belong in Phase 4.
 - Acceptance: The homepage, About, Services, and Contact pages work together as a coherent marketing funnel, and any remaining needs for service-detail pages or pricing follow-ups are documented clearly.
-- Completion: Reviewed the updated core pages together against the Phase 3 goal, refreshed `docs/phase3_core_pages_audit.md`, and documented that the major remaining gaps are now dedicated service pages and operational contact handling in later phases.
+- Completion: Reviewed the updated core pages together against the Phase 3 goal, refreshed the Phase 3 audit, and documented that the major remaining gaps are now dedicated service pages and operational contact handling in later phases.
 
 ### PH2-01 Finalize Phase 2 Content Strategy
 
@@ -279,7 +279,7 @@ Add all `done` tasks here.
 - Depends On: `none`
 - Summary: Convert the Phase 2 brand, business, and site structure guidance into an approved content outline for the homepage, About, Services, Pricing, and Contact pages.
 - Acceptance: The repo documents the exact section order, key messages, and CTA intent for each Phase 2 page so implementation can proceed without inventing copy structure during build.
-- Completion: Added `docs/phase2_content_strategy.md` with page-by-page section order, CTA intent, reusable trust themes, and voice guardrails for the five Phase 2 pages.
+- Completion: Added a Phase 2 content strategy with page-by-page section order, CTA intent, reusable trust themes, and voice guardrails for the five Phase 2 pages.
 
 ### PH2-02 Apply Brand Typography and Visual Direction
 
