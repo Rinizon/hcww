@@ -52,18 +52,18 @@ Keep the highest-priority ready work at the top so agents can claim it quickly.
 - Acceptance: `https://hcww.net/sitemap.xml` is submitted successfully in both Google Search Console and Bing Webmaster Tools, and any basic verification notes are recorded.
 - Completion: Setup path documented in `docs/search_engine_submission_runbook.md`; external account access is still required.
 
-### POST-02 Publish Next Post-Launch Content Update
-
-- Status: `todo`
-- Owner: `unassigned`
-- Depends On: `LIVE-06`
-- Summary: Publish the next content-focused update so the site moves from launch completion into active growth.
-- Acceptance: The repo includes one meaningful new public content improvement such as a blog post, service-page refresh, or other SEO-relevant update aligned with the content workflow.
-- Completion:
-
 ## Completed Work
 
 Add all `done` tasks here.
+
+### POST-02 Publish Next Post-Launch Content Update
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `LIVE-06`
+- Summary: Publish the next content-focused update so the site moves from launch completion into active growth.
+- Acceptance: The repo includes one meaningful new public content improvement such as a blog post, service-page refresh, or other SEO-relevant update aligned with the content workflow.
+- Completion: Published `/blog/how-much-does-a-small-business-website-cost/`, added it to the blog landing page and sitemap, and used it to strengthen the pricing and website-services content funnel.
 
 ### LIVE-06 Complete External Post-Launch Route Audit
 
