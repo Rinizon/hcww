@@ -27,6 +27,7 @@ Confirmed complete by June 20, 2026:
 - Cloudflare Web Analytics enabled and reporting
 - Better Stack uptime monitoring active for the main domain
 - Microsoft Teams alert routing integrated for uptime notifications
+- Google Search Console and Bing Webmaster Tools set up for sitemap submission
 
 ## Remaining Follow-Up
 
@@ -35,5 +36,4 @@ No blocking launch issues remain in the repo at the time of this audit.
 Optional post-launch improvements:
 
 - add route-specific uptime monitors beyond the main domain
-- submit the sitemap to Google Search Console and Bing Webmaster Tools
 - continue publishing content and service refinements over time
