@@ -1,8 +1,8 @@
 # Deployment, Hosting, and SSL Plan
 
-## Chosen Hosting Path
+## Recommended Hosting Path
 
-Use Cloudflare Pages for both the initial launch and the expected near-term production hosting model.
+Use Cloudflare Pages for the initial launch.
 
 ## Why Cloudflare Pages
 
@@ -10,9 +10,7 @@ Use Cloudflare Pages for both the initial launch and the expected near-term prod
 - HTTPS is automatic
 - CDN delivery is built in
 - Simple git-based deployments fit the current project structure
-- Easy to connect and manage the custom domain
-- Lower operational overhead than a self-managed VM or container deployment
-- A better fit than Kubernetes for the current static site scope
+- Easy to connect a custom domain later
 
 ## Environment Strategy
 
@@ -25,7 +23,6 @@ Use Cloudflare Pages for both the initial launch and the expected near-term prod
 
 - Connect the production branch to the primary Pages project
 - Point `hcww.net` to Cloudflare-managed DNS once launch is ready
-- Treat Cloudflare Pages as the default production platform unless the project later grows beyond static-site needs
 
 ## Deployment Flow
 
