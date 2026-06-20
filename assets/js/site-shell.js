@@ -42,6 +42,10 @@ function renderFooter() {
           <strong>Hill Country Web Works</strong>
           <p>Modern websites, dependable support, and senior technical help for Hill Country businesses.</p>
           <p class="footer-note">Direct communication, clear next steps, and long-term support without corporate runaround.</p>
+          <div class="footer-links">
+            <a href="/privacy/">Privacy Policy</a>
+            <a href="/terms/">Terms of Service</a>
+          </div>
         </div>
         <div class="stack">
           <p><strong>Boerne, Texas</strong></p>
@@ -69,4 +73,53 @@ function mountSiteShell() {
   }
 }
 
+function mountContactForm() {
+  const form = document.querySelector("[data-contact-form]");
+  const status = document.querySelector("[data-contact-status]");
+
+  if (!form || !status) {
+    return;
+  }
+
+  function setStatus(message, type) {
+    status.hidden = false;
+    status.textContent = message;
+    status.dataset.state = type;
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    const name = String(formData.get("name") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const inquiryType = String(formData.get("inquiry_type") || "").trim();
+    const message = String(formData.get("message") || "").trim();
+
+    if (!name || !email || !message) {
+      setStatus("Please complete your name, email, and message before sending.", "error");
+      return;
+    }
+
+    const subject = `HCWW inquiry: ${inquiryType || "General"} - ${name}`;
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Inquiry type: ${inquiryType || "General"}`,
+      "",
+      "Project or support details:",
+      message,
+    ].join("\n");
+
+    const mailtoHref = `mailto:robert@hcww.net?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    setStatus(
+      "Your email app should open with this inquiry prefilled. If it does not, email robert@hcww.net directly and paste in your message.",
+      "success",
+    );
+    window.location.href = mailtoHref;
+  });
+}
+
 mountSiteShell();
+mountContactForm();

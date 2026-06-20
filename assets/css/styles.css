@@ -535,7 +535,8 @@ ul {
 }
 
 .form input,
-.form textarea {
+.form textarea,
+.form select {
   width: 100%;
   padding: 0.9rem 1rem;
   font: inherit;
@@ -547,6 +548,23 @@ ul {
 
 .form textarea {
   resize: vertical;
+}
+
+.form-status {
+  padding: 0.95rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(46, 46, 46, 0.12);
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.form-status[data-state="success"] {
+  border-color: rgba(97, 113, 100, 0.34);
+  background: rgba(138, 159, 140, 0.16);
+}
+
+.form-status[data-state="error"] {
+  border-color: rgba(122, 30, 44, 0.26);
+  background: rgba(122, 30, 44, 0.08);
 }
 
 .contact-methods {
@@ -592,6 +610,18 @@ ul {
 
 .footer-note {
   color: rgba(248, 246, 244, 0.72);
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: rgba(248, 246, 244, 0.84);
+  text-decoration: underline;
+  text-underline-offset: 0.18rem;
 }
 
 .cta-band {

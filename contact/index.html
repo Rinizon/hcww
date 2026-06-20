@@ -102,16 +102,21 @@
                 <span>Response expectation</span>
                 <p>You can expect a clear reply with the likely next step, even if the first move is a quick clarification.</p>
               </div>
+              <div class="contact-method">
+                <span>Scheduling</span>
+                <p>Scheduling links are not in use at launch. Email or phone is the current booking path.</p>
+              </div>
             </div>
           </article>
 
-          <form class="card form" aria-label="Contact form">
+          <form class="card form" aria-label="Contact form" data-contact-form>
             <p class="eyebrow">Send a message</p>
             <h2>Tell us what you need help with.</h2>
             <p class="muted">
               Helpful details include your business type, current challenge, timing, and what a
               successful outcome would look like.
             </p>
+            <p class="form-status" data-contact-status hidden aria-live="polite"></p>
             <ul class="plain-list">
               <li>Website lead: mention the kind of site you need and any timeline goals.</li>
               <li>Support lead: mention the recurring issue, affected systems, and urgency.</li>
@@ -119,17 +124,37 @@
             </ul>
             <label>
               Name
-              <input type="text" name="name" />
+              <input type="text" name="name" required />
             </label>
             <label>
               Email
-              <input type="email" name="email" />
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Inquiry type
+              <select name="inquiry_type">
+                <option>Website Project</option>
+                <option>Managed IT Support</option>
+                <option>Technical Consulting</option>
+                <option>General Question</option>
+              </select>
             </label>
             <label>
               How can we help?
-              <textarea name="message" rows="6"></textarea>
+              <textarea name="message" rows="6" required></textarea>
             </label>
-            <button class="button button--primary" type="button">Send Inquiry</button>
+            <button class="button button--primary" type="submit">Send Inquiry</button>
+            <p class="muted">
+              Submitting opens your email app with a prefilled message. If that does not work,
+              email <a href="mailto:robert@hcww.net">robert@hcww.net</a> directly or call
+              <a href="tel:+18304310005">(830) 431-0005</a>.
+            </p>
+            <noscript>
+              <p class="muted">
+                JavaScript is required for the prefilled email handoff. If it is disabled, please
+                email <a href="mailto:robert@hcww.net">robert@hcww.net</a> directly.
+              </p>
+            </noscript>
           </form>
         </section>
 

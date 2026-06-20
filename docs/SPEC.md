@@ -43,11 +43,47 @@ Notes:
 Add all new `todo`, `in_progress`, and `blocked` tasks in this section.
 Keep the highest-priority ready work at the top so agents can claim it quickly.
 
-No active tasks. Add new `todo`, `in_progress`, or `blocked` work here when Phase 6 priorities are ready to queue.
+No active tasks. Add new `todo`, `in_progress`, or `blocked` work here when Phase 7 priorities are ready to queue.
 
 ## Completed Work
 
 Add all `done` tasks here.
+
+### PH6-01 Implement Contact Form Behavior and Inquiry Flow
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH4-05`
+- Summary: Add real client-side contact form behavior, clearer intake guidance, and a practical inquiry flow that lets visitors initiate contact reliably without a backend.
+- Acceptance: The Contact page includes working form validation and a submission flow that guides visitors into email contact with clear fallback messaging and a documented operational limitation.
+- Completion: Updated `contact/index.html` and `assets/js/site-shell.js` with client-side validation, inquiry-type intake, prefilled email handoff behavior, and explicit manual fallback guidance.
+
+### PH6-02 Add Legal Pages and Sitewide Legal Links
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH4-05`
+- Summary: Create Privacy Policy and Terms of Service pages, then expose them through the shared site shell and sitemap.
+- Acceptance: The site includes accessible Privacy Policy and Terms pages, both are linked in the footer, and the sitemap reflects the new routes.
+- Completion: Added `/privacy/` and `/terms/`, exposed both routes in the shared footer, and expanded `sitemap.xml` to include the legal pages and new service-detail pages.
+
+### PH6-03 Document Launch Operations Baseline
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH6-01`, `PH6-02`
+- Summary: Record the launch-ready baseline for inquiry handling, business hours, scheduling stance, analytics direction, and uptime monitoring so operations are explicit before launch.
+- Acceptance: The repo documents the selected contact-handling workflow, business-hours wording, scheduling decision, analytics direction, and monitoring plan for launch preparation.
+- Completion: Added `docs/phase6_operations_baseline.md` with the launch-direction inquiry flow, business-hours wording, no-scheduling decision, analytics direction, and uptime-monitoring baseline.
+
+### PH6-04 Validate Phase 6 Operations Readiness
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH6-01`, `PH6-02`, `PH6-03`
+- Summary: Review the operational and legal additions together and capture any remaining launch-blocking gaps before Phase 7.
+- Acceptance: The updated contact flow, legal pages, and operations baseline are verified together, and any remaining launch blockers are documented clearly for the next phase.
+- Completion: Added `docs/phase6_operations_readiness_audit.md` to record the completed operational baseline, legal coverage, validation notes, and the remaining launch blockers for the next phase.
 
 ### PH4-01 Build Website Design and Hosting Detail Page
 
