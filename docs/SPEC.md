@@ -43,7 +43,7 @@ Notes:
 Add all new `todo`, `in_progress`, and `blocked` tasks in this section.
 Keep the highest-priority ready work at the top so agents can claim it quickly.
 
-No active tasks. Add new `todo`, `in_progress`, or `blocked` work here when Phase 5 priorities are ready to queue.
+No active tasks. Add new `todo`, `in_progress`, or `blocked` work here when Phase 6 priorities are ready to queue.
 
 ## Completed Work
 
@@ -85,14 +85,14 @@ Add all `done` tasks here.
 - Acceptance: The overview and pricing pages route visitors cleanly into the correct service-detail pages, and the pricing language remains consistent across the site.
 - Completion: Updated `index.html`, `services/index.html`, and `pricing/index.html` so the core funnel now routes into the dedicated service pages with consistent pricing-aligned CTAs.
 
-### PH4-05 Validate Phase 4 Sales Pages and Capture Phase 5 Dependencies
+### PH4-05 Validate Phase 4 Sales Pages and Capture Deferred Trust Dependencies
 
 - Status: `done`
 - Owner: `Codex`
 - Depends On: `PH4-01`, `PH4-02`, `PH4-03`, `PH4-04`
-- Summary: Review the finished service-detail and pricing pages as a coordinated mid-funnel experience and capture the remaining proof and local-trust needs for Phase 5.
+- Summary: Review the finished service-detail and pricing pages as a coordinated mid-funnel experience and capture the remaining proof and local-trust needs that are now deferred while the roadmap moves to Phase 6.
 - Acceptance: The service-detail pages and pricing page work together as a qualified-lead path, and any remaining needs for portfolio, testimonials, or service-area proof are documented clearly.
-- Completion: Added `docs/phase4_sales_pages_audit.md`, confirmed pricing consistency across the new detail pages, validated the updated Pricing route locally with `200 OK`, and documented Phase 5 dependencies around proof and local-trust content.
+- Completion: Added `docs/phase4_sales_pages_audit.md`, confirmed pricing consistency across the new detail pages, validated the updated Pricing route locally with `200 OK`, and documented the deferred proof and local-trust work while the roadmap moves directly to Phase 6.
 
 ### PH3-01 Audit Core Marketing Pages Against Phase 3 Goals
 

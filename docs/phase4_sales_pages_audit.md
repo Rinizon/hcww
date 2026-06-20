@@ -70,7 +70,7 @@ Each detail page now uses its own service-appropriate CTA:
 - Local HTTP validation returned `200 OK` for the updated Pricing route during the Phase 4 pass.
 - Localhost behavior remained intermittent for some additional route checks in this environment, so the remaining validation was completed by reviewing the created routes, internal links, and page-to-page consistency directly in the source.
 
-## Phase 5 Dependencies Now Visible
+## Deferred Trust and Proof Work
 
 The remaining gaps are mostly proof and trust assets rather than service explanation:
 
@@ -79,4 +79,4 @@ The remaining gaps are mostly proof and trust assets rather than service explana
 - richer local-presence content such as a service-area page
 - founder imagery and local visuals to deepen credibility
 
-These dependencies map cleanly to Phase 5.
+These items are now deferred rather than scheduled as the next phase, since the roadmap moves directly from Phase 4 to Phase 6.

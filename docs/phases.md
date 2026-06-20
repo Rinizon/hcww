@@ -75,24 +75,9 @@ The goal is to move from strategy and foundations into build, launch, and ongoin
 - Pricing ranges are communicated clearly and consistently
 - Service-specific calls to action guide users toward consultation
 
-## Phase 5: Trust, Proof, and Local Presence
-
-**Goal:** Strengthen credibility with supporting pages that reinforce trust and local relevance.
-
-**Focus Areas**
-
-- Portfolio page
-- Testimonials page
-- Service Area page
-- Founder imagery, local visuals, and case-study structure
-
-**Expected Outcomes**
-
-- The site demonstrates proof of work and social proof
-- Local service coverage is clearly communicated
-- Supporting trust content is ready to grow over time
-
 ## Phase 6: Conversion, Operations, and Compliance
+
+Phase 5 has been removed from the current roadmap. After Phase 4, the project proceeds directly to Phase 6.
 
 **Goal:** Complete the operational pieces required for a production-ready business website.
 
