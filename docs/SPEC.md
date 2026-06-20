@@ -61,13 +61,13 @@ Keep the highest-priority ready work at the top so agents can claim it quickly.
 - Acceptance: Public monitors are active for the core routes, alert delivery is confirmed, and the launch docs no longer list uptime monitoring as unresolved.
 - Completion:
 
-### LIVE-04 Finish Manual Launch QA
+### LIVE-05 Configure `www` Redirect to Apex Domain
 
-- Status: `todo`
+- Status: `blocked`
 - Owner: `unassigned`
 - Depends On: `LIVE-01`
-- Summary: Complete the remaining manual checks that require browser and inbox validation outside the current environment.
-- Acceptance: The live contact form delivery is confirmed end to end, key pages are checked on real devices or browsers, and any remaining launch issues are either fixed or explicitly accepted.
+- Summary: Configure Cloudflare so `https://www.hcww.net/` redirects permanently to `https://hcww.net/`.
+- Acceptance: `https://www.hcww.net/` resolves publicly and returns a permanent redirect to the apex domain without breaking the live Pages site.
 - Completion:
 
 ## Completed Work
@@ -82,6 +82,15 @@ Add all `done` tasks here.
 - Summary: Check the live Cloudflare Pages deployment on the public host and record which launch-baseline items are now confirmed versus still pending.
 - Acceptance: The repo documents the results of the public-host validation pass, including HTTPS behavior, public route reachability, and any newly discovered launch blockers.
 - Completion: Verified on June 20, 2026 that `https://hcww.net/`, `/contact/`, `/robots.txt`, and `/sitemap.xml` returned `200`, confirmed `http://hcww.net/` redirects to `https://hcww.net/`, and documented that `https://www.hcww.net/` did not resolve during the live check.
+
+### LIVE-04 Finish Manual Launch QA
+
+- Status: `done`
+- Owner: `user`
+- Depends On: `LIVE-01`
+- Summary: Complete the remaining manual checks that require browser and inbox validation outside the current environment.
+- Acceptance: The live contact form delivery is confirmed end to end, key pages are checked on real devices or browsers, and any remaining launch issues are either fixed or explicitly accepted.
+- Completion: User confirmed completion of the live contact-form, browser, and device QA checks on June 20, 2026.
 
 ### LAUNCH-01 Replace Launch-Direction Contact Flow with Hosted Submission Path
 

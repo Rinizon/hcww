@@ -71,5 +71,9 @@ Completed on the live host:
 Still pending:
 
 - Decide and validate alternate host behavior for `www.hcww.net`
+- Final public broken-link checks outside the current environment
+
+User-confirmed complete on June 20, 2026:
+
 - Contact path tested end to end on the public host
-- Final broken-link and device QA checks outside the current environment
+- Manual browser and device QA checks

@@ -25,11 +25,14 @@ The items still blocking a confident public launch are:
 
 - production analytics account setup and script installation
 - uptime monitoring account setup with alert routing
-- public-host validation that the hosted contact form delivers correctly from `https://hcww.net/contact/`
-- final browser and device QA outside the current environment
 - decision and validation for alternate-host behavior such as `www` if that hostname is expected to redirect to the apex domain
 - final public broken-link checks outside the current environment
 
+User-confirmed complete on June 20, 2026:
+
+- live contact-form delivery testing
+- manual browser and device QA
+
 ## Recommendation
 
-The site is publicly reachable on Cloudflare Pages and the primary HTTPS route is working. The next pass should focus on the external service accounts, direct inbox-form confirmation, real-device QA, and whether `www.hcww.net` should be supported or intentionally left unset.
+The site is publicly reachable on Cloudflare Pages and the primary HTTPS route is working. The next pass should focus on the external service accounts, the `www` redirect decision, and any remaining public broken-link review.
