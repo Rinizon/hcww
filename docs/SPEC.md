@@ -43,15 +43,6 @@ Notes:
 Add all new `todo`, `in_progress`, and `blocked` tasks in this section.
 Keep the highest-priority ready work at the top so agents can claim it quickly.
 
-### LIVE-02 Configure Production Analytics
-
-- Status: `blocked`
-- Owner: `unassigned`
-- Depends On: `LIVE-01`
-- Summary: Select and configure the production analytics platform, then install the final public-site script or tag.
-- Acceptance: The chosen analytics platform is active on `https://hcww.net/`, the implementation is reflected in the repo if code changes are needed, and the launch docs no longer list analytics as unresolved.
-- Completion:
-
 ### LIVE-03 Configure Uptime Monitoring and Alerts
 
 - Status: `blocked`
@@ -64,6 +55,15 @@ Keep the highest-priority ready work at the top so agents can claim it quickly.
 ## Completed Work
 
 Add all `done` tasks here.
+
+### LIVE-02 Configure Production Analytics
+
+- Status: `done`
+- Owner: `user`
+- Depends On: `LIVE-01`
+- Summary: Select and configure the production analytics platform, then install the final public-site script or tag.
+- Acceptance: The chosen analytics platform is active on `https://hcww.net/`, the implementation is reflected in the repo if code changes are needed, and the launch docs no longer list analytics as unresolved.
+- Completion: User confirmed on June 20, 2026 that Cloudflare Web Analytics is enabled by default for the live site and reporting metrics such as visits, page views, and page load time.
 
 ### LIVE-01 Validate Public Launch Baseline
 

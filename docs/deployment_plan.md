@@ -74,5 +74,6 @@ Still pending:
 
 User-confirmed complete on June 20, 2026:
 
+- Cloudflare Web Analytics is enabled and reporting
 - Contact path tested end to end on the public host
 - Manual browser and device QA checks
