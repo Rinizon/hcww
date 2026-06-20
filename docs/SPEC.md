@@ -50,7 +50,7 @@ Keep the highest-priority ready work at the top so agents can claim it quickly.
 - Depends On: `LIVE-01`
 - Summary: Create the external uptime monitor checks and route alerts to the correct owner destination.
 - Acceptance: Public monitors are active for the core routes, alert delivery is confirmed, and the launch docs no longer list uptime monitoring as unresolved.
-- Completion:
+- Completion: Setup path documented in `docs/uptime_monitoring_runbook.md`; external provider account action is still required.
 
 ## Completed Work
 

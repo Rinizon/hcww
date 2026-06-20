@@ -59,6 +59,26 @@ Future upgrade options:
 - another hosted form backend if spam handling or workflow needs change
 - deeper CRM or ticketing integration if inquiry volume grows
 
+## Uptime Monitoring Direction
+
+Recommended initial provider:
+
+- Better Stack Uptime
+
+Recommended required routes:
+
+- `https://hcww.net/`
+- `https://hcww.net/services/`
+- `https://hcww.net/pricing/`
+- `https://hcww.net/contact/`
+
+Recommended setup notes:
+
+- use `5 minute` checks
+- alert the primary owner email first
+- confirm at least one successful check and one alert path during setup
+- see `docs/uptime_monitoring_runbook.md` for the full operator checklist
+
 ## Pre-Launch Checklist
 
 Completed on the live host:
