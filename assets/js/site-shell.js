@@ -78,6 +78,7 @@ function mountSiteShell() {
 function mountContactForm() {
   const form = document.querySelector("[data-contact-form]");
   const status = document.querySelector("[data-contact-status]");
+  const submitButton = form ? form.querySelector('button[type="submit"]') : null;
 
   if (!form || !status) {
     return;
@@ -90,36 +91,18 @@ function mountContactForm() {
   }
 
   form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const formData = new FormData(form);
-    const name = String(formData.get("name") || "").trim();
-    const email = String(formData.get("email") || "").trim();
-    const inquiryType = String(formData.get("inquiry_type") || "").trim();
-    const message = String(formData.get("message") || "").trim();
-
-    if (!name || !email || !message) {
-      setStatus("Please complete your name, email, and message before sending.", "error");
+    if (!form.checkValidity()) {
+      event.preventDefault();
+      setStatus("Please complete the required fields before sending your inquiry.", "error");
       return;
     }
 
-    const subject = `HCWW inquiry: ${inquiryType || "General"} - ${name}`;
-    const body = [
-      `Name: ${name}`,
-      `Email: ${email}`,
-      `Inquiry type: ${inquiryType || "General"}`,
-      "",
-      "Project or support details:",
-      message,
-    ].join("\n");
+    setStatus("Sending your inquiry through the hosted contact form...", "success");
 
-    const mailtoHref = `mailto:robert@hcww.net?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    setStatus(
-      "Your email app should open with this inquiry prefilled. If it does not, email robert@hcww.net directly and paste in your message.",
-      "success",
-    );
-    window.location.href = mailtoHref;
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending...";
+    }
   });
 
   form.querySelectorAll("input, select, textarea").forEach((field) => {
@@ -128,6 +111,11 @@ function mountContactForm() {
         status.hidden = true;
         status.textContent = "";
         delete status.dataset.state;
+      }
+
+      if (submitButton && submitButton.disabled) {
+        submitButton.disabled = false;
+        submitButton.textContent = "Send Inquiry";
       }
     });
   });

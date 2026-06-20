@@ -46,11 +46,17 @@ Use Cloudflare Pages for the initial launch.
 
 ## Contact Form Direction
 
-The current Phase 1 contact form is a placeholder UI only. In a later phase, connect it to one of these:
+The contact form now submits through a hosted form endpoint and redirects to `/contact/thanks/` after success.
 
-- Cloudflare Forms or Workers-based form handling
-- Formspree or a similar hosted form backend
-- A direct email workflow only if spam protection and reliability are acceptable
+Current launch note:
+
+- Confirm the hosted endpoint works on the public domain after deployment and verify inbox delivery manually.
+
+Future upgrade options:
+
+- Cloudflare Workers-based form handling for first-party processing
+- another hosted form backend if spam handling or workflow needs change
+- deeper CRM or ticketing integration if inquiry volume grows
 
 ## Pre-Launch Checklist
 
@@ -59,4 +65,4 @@ The current Phase 1 contact form is a placeholder UI only. In a later phase, con
 - HTTPS active
 - Canonical host redirect confirmed
 - `robots.txt` and `sitemap.xml` published
-- Contact path tested end to end once backend handling is added
+- Contact path tested end to end on the public host

@@ -15,18 +15,19 @@ Phase 6 focused on:
 
 ### Contact flow
 
-Status: partially operational by design
+Status: operational with hosted dependency
 
 What is now in place:
 
 - client-side validation on the contact form
-- prefilled email handoff through the visitor's local email app
-- explicit fallback guidance to email or call manually
+- hosted submission delivery through the website contact form
+- a visible success redirect at `/contact/thanks/`
+- explicit fallback guidance to email or call manually if hosted submission fails
 - clearer intake guidance by inquiry type
 
 Known limitation:
 
-- there is still no server-side or hosted form handler
+- there is still no first-party backend or verified production delivery confirmation yet
 
 ### Legal baseline
 
@@ -68,8 +69,8 @@ What is now in place:
 
 The biggest remaining operational gaps before final launch are:
 
-- a true server-side or hosted contact-form submission path
 - analytics account setup and final script installation
 - uptime-monitor account setup and alert configuration
+- public-host validation of the hosted contact-form delivery path
 
 These gaps now fit cleanly into the next launch-readiness phase.

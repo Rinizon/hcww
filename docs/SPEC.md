@@ -43,11 +43,36 @@ Notes:
 Add all new `todo`, `in_progress`, and `blocked` tasks in this section.
 Keep the highest-priority ready work at the top so agents can claim it quickly.
 
-No active tasks. Add new `todo`, `in_progress`, or `blocked` work here when new post-launch priorities are ready to queue.
-
 ## Completed Work
 
 Add all `done` tasks here.
+
+### LAUNCH-01 Replace Launch-Direction Contact Flow with Hosted Submission Path
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH7-03`
+- Summary: Replace the current email-app handoff with a real hosted contact submission flow that works on the deployed static site.
+- Acceptance: The Contact page submits through a hosted form endpoint, provides a success path, and no longer depends on the visitor having a local email app configured.
+- Completion: Updated `/contact/` to post to a hosted form endpoint, added a confirmation route at `/contact/thanks/`, and changed the shared contact-form script to support the hosted submission path.
+
+### LAUNCH-02 Update Launch Operations and Legal Notes
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `LAUNCH-01`
+- Summary: Update the operations, privacy, and launch-readiness documentation so it reflects the live hosted inquiry path and the reduced blocker list.
+- Acceptance: The operations and audit docs accurately describe the new contact handling model, any third-party form processing, and the remaining launch blockers.
+- Completion: Updated the operations baseline, readiness audits, deployment plan, and privacy policy so they reflect the hosted form flow, third-party processing note, and the narrower launch blocker set.
+
+### LAUNCH-03 Re-Audit Remaining Launch Blockers
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `LAUNCH-01`, `LAUNCH-02`
+- Summary: Re-review the launch checklist after the contact-flow upgrade and capture only the blockers that still require external account setup or public-host validation.
+- Acceptance: The repo contains a concise launch-blocker audit with the contact submission path resolved and only the genuinely remaining blockers listed.
+- Completion: Added `docs/launch_blocker_cleanup_audit.md` to capture the resolved hosted contact path and the remaining launch blockers that still require external setup or public-host checks.
 
 ### PH8-01 Build Blog Landing and Content Entry Points
 

@@ -566,6 +566,11 @@ ul {
   resize: vertical;
 }
 
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
 .form-status {
   padding: 0.95rem 1rem;
   border-radius: 1rem;

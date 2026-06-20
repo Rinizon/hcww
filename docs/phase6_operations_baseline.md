@@ -7,17 +7,18 @@ This document records the selected operational baseline for launch preparation a
 Current launch-direction inquiry flow:
 
 - The contact form uses client-side validation.
-- Form submission opens the visitor's email app with a prefilled inquiry addressed to `robert@hcww.net`.
-- If the email app does not open, the page provides a direct fallback instruction to email or call manually.
+- Form submission posts to a hosted form endpoint addressed to `robert@hcww.net`.
+- A confirmation page at `/contact/thanks/` provides the visible success path after submission.
+- If the hosted submission fails for any reason, the page still provides direct fallback instructions to email or call manually.
 
 Current limitation:
 
-- There is no server-side form handler yet.
-- This means the inquiry flow is reliable only for visitors with a working local email app or manual follow-through.
+- The site still depends on a third-party hosted form processor rather than first-party backend handling.
+- The hosted endpoint should be confirmed in production after deployment so the inbox delivery and redirect behavior are validated publicly.
 
 Operational note:
 
-- A true backend or hosted form service can be added later if launch requirements change.
+- A first-party backend can still be added later if launch requirements or spam-handling needs change.
 
 ## 2. Business Hours and Contact Methods
 
@@ -78,7 +79,7 @@ Recommended minimum monitored endpoints:
 
 Operational items still deferred beyond this Phase 6 pass:
 
-- a true server-side or hosted form submission path
 - analytics account setup and script installation
 - uptime monitor account setup and alert destination confirmation
+- production validation of the hosted contact-form delivery path
 - any optional cookie notice if analytics or tracking changes warrant it

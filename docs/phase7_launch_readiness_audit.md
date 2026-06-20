@@ -74,14 +74,14 @@ Completed:
 - robots.txt exists
 - legal pages are live in the route structure
 - service-detail pages and pricing routes are internally linked
-- contact flow has a practical launch-direction fallback
+- contact flow now has a hosted submission path plus a visible confirmation page
 - launch-ops baseline is documented
 
 Still blocking or deferred before public launch:
 
-- a true server-side or hosted form submission path
 - production analytics setup and script installation
 - uptime monitoring account setup and alert routing
+- public-host validation of the hosted contact-form delivery path
 - final browser and device QA outside this environment
 - final public-host validation for SSL, canonical domain behavior, and broken-link checks
 
