@@ -43,6 +43,24 @@ Notes:
 Add all new `todo`, `in_progress`, and `blocked` tasks in this section.
 Keep the highest-priority ready work at the top so agents can claim it quickly.
 
+### POST-01 Submit Sitemap to Search Engines
+
+- Status: `blocked`
+- Owner: `unassigned`
+- Depends On: `LIVE-06`
+- Summary: Submit the live sitemap to Google Search Console and Bing Webmaster Tools so the post-launch indexing workflow is established.
+- Acceptance: `https://hcww.net/sitemap.xml` is submitted successfully in both Google Search Console and Bing Webmaster Tools, and any basic verification notes are recorded.
+- Completion: Setup path documented in `docs/search_engine_submission_runbook.md`; external account access is still required.
+
+### POST-02 Publish Next Post-Launch Content Update
+
+- Status: `todo`
+- Owner: `unassigned`
+- Depends On: `LIVE-06`
+- Summary: Publish the next content-focused update so the site moves from launch completion into active growth.
+- Acceptance: The repo includes one meaningful new public content improvement such as a blog post, service-page refresh, or other SEO-relevant update aligned with the content workflow.
+- Completion:
+
 ## Completed Work
 
 Add all `done` tasks here.

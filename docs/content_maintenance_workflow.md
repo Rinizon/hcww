@@ -64,3 +64,11 @@ Recommended order for future content growth:
 2. Add portfolio or case-study content when proof assets become available.
 3. Add testimonials when approved client quotes exist.
 4. Refresh pricing and services wording as offerings evolve.
+
+## 7. Search Console and Webmaster Follow-Up
+
+After launch:
+
+- submit `https://hcww.net/sitemap.xml` to Google Search Console
+- submit `https://hcww.net/sitemap.xml` to Bing Webmaster Tools
+- review crawl and indexing feedback before the next major content push
