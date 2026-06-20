@@ -43,6 +43,66 @@ Notes:
 Add all new `todo`, `in_progress`, and `blocked` tasks in this section.
 Keep the highest-priority ready work at the top so agents can claim it quickly.
 
+No active tasks. Add new `todo`, `in_progress`, or `blocked` work here when Phase 4 priorities are ready to queue.
+
+## Completed Work
+
+Add all `done` tasks here.
+
+### PH3-01 Audit Core Marketing Pages Against Phase 3 Goals
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH2-08`
+- Summary: Compare the current homepage, About, Services, and Contact pages against the Phase 3 goals and identify the highest-value structural and conversion gaps.
+- Acceptance: The repo contains a concise Phase 3 audit that maps each core page to its intended purpose, current strengths, remaining gaps, and the recommended implementation order for follow-up tasks.
+- Completion: Added `docs/phase3_core_pages_audit.md` and used it to capture the current page strengths, funnel gaps, and the Phase 4 dependencies that remain after the Phase 3 pass.
+
+### PH3-02 Strengthen Homepage Visitor Journey
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH3-01`
+- Summary: Refine the homepage so it carries visitors from first impression through trust, service understanding, and a clear contact action with less friction.
+- Acceptance: The homepage presents a complete first-impression journey with stronger cross-links, clearer next steps, and section flow that supports contact conversion without relying on other pages to fill major gaps.
+- Completion: Added scenario-based routing and service-specific anchor links on `index.html` so visitors can move from the homepage into the right service path more intentionally.
+
+### PH3-03 Expand About Page Trust Story
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH3-01`
+- Summary: Deepen the About page so it better supports credibility, local identity, and relationship confidence for visitors evaluating whether to reach out.
+- Acceptance: The About page includes a fuller founder story, clearer values and differentiators, and strong links back into services or contact so it functions as a meaningful trust page rather than a short profile.
+- Completion: Expanded `about/index.html` with a client-outcome section, stronger local-rooted positioning, and explicit links into services, pricing, and contact.
+
+### PH3-04 Improve Services Overview Page Navigation
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH3-01`
+- Summary: Turn the Services page into a better decision page by helping visitors compare offerings, understand fit, and move toward the right next action.
+- Acceptance: The Services page gives visitors a clearer overview of each service category, explains how to choose a starting point, and routes them toward contact or the later Phase 4 detail pages.
+- Completion: Added service anchors and a comparison-oriented “Which service fits?” section in `services/index.html` to make the overview page a stronger mid-funnel decision page.
+
+### PH3-05 Increase Contact Page Conversion Clarity
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH3-01`
+- Summary: Refine the Contact page so outreach feels easier, more trustworthy, and more actionable for new visitors.
+- Acceptance: The Contact page clearly explains why to reach out, what information is helpful, and what happens next, with a layout and messaging flow that reduces hesitation.
+- Completion: Expanded `contact/index.html` with visitor-type guidance, stronger response expectations, richer intake hints, and clearer “what happens next” messaging.
+
+### PH3-06 Validate Core Marketing Funnel and Capture Phase 4 Dependencies
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH3-02`, `PH3-03`, `PH3-04`, `PH3-05`
+- Summary: Review the updated core marketing pages together as a single visitor journey and record any remaining dependencies that belong in Phase 4.
+- Acceptance: The homepage, About, Services, and Contact pages work together as a coherent marketing funnel, and any remaining needs for service-detail pages or pricing follow-ups are documented clearly.
+- Completion: Reviewed the updated core pages together against the Phase 3 goal, refreshed `docs/phase3_core_pages_audit.md`, and documented that the major remaining gaps are now dedicated service pages and operational contact handling in later phases.
+
 ### PH2-01 Finalize Phase 2 Content Strategy
 
 - Status: `done`
@@ -114,10 +174,6 @@ Keep the highest-priority ready work at the top so agents can claim it quickly.
 - Summary: Review the completed Phase 2 work against `docs/phases.md`, `docs/brand_style.md`, and `docs/AGENTS.md`, then capture any remaining gaps before core page build continues.
 - Acceptance: Phase 2 deliverables are verified in the running site and documentation, and any unresolved issues are either fixed or turned into clearly scoped follow-up tasks for Phase 3.
 - Completion: Fetched `origin` to confirm the branch is current, validated local HTTP responses for the updated home and pricing routes, and reviewed the refreshed Phase 2 pages and documentation for consistency before leaving the queue ready for Phase 3.
-
-## Completed Work
-
-Add all `done` tasks here.
 
 ### PH1-01 Confirm Site Stack and Project Structure
 
