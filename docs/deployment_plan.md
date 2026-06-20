@@ -1,8 +1,8 @@
 # Deployment, Hosting, and SSL Plan
 
-## Recommended Hosting Path
+## Hosting Path
 
-Use Cloudflare Pages for the initial launch.
+Use Cloudflare Pages for the live production site.
 
 ## Why Cloudflare Pages
 
@@ -22,7 +22,8 @@ Use Cloudflare Pages for the initial launch.
 ### Production
 
 - Connect the production branch to the primary Pages project
-- Point `hcww.net` to Cloudflare-managed DNS once launch is ready
+- Point `hcww.net` to Cloudflare-managed DNS for the live site
+- Decide whether `www.hcww.net` should redirect to the apex domain or remain unset
 
 ## Deployment Flow
 
@@ -60,9 +61,15 @@ Future upgrade options:
 
 ## Pre-Launch Checklist
 
+Completed on the live host:
+
 - Domain connected
-- DNS records verified
-- HTTPS active
-- Canonical host redirect confirmed
+- DNS records verified for `hcww.net`
+- HTTPS active on `https://hcww.net/`
 - `robots.txt` and `sitemap.xml` published
+
+Still pending:
+
+- Decide and validate alternate host behavior for `www.hcww.net`
 - Contact path tested end to end on the public host
+- Final broken-link and device QA checks outside the current environment

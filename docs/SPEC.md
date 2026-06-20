@@ -43,9 +43,45 @@ Notes:
 Add all new `todo`, `in_progress`, and `blocked` tasks in this section.
 Keep the highest-priority ready work at the top so agents can claim it quickly.
 
+### LIVE-02 Configure Production Analytics
+
+- Status: `blocked`
+- Owner: `unassigned`
+- Depends On: `LIVE-01`
+- Summary: Select and configure the production analytics platform, then install the final public-site script or tag.
+- Acceptance: The chosen analytics platform is active on `https://hcww.net/`, the implementation is reflected in the repo if code changes are needed, and the launch docs no longer list analytics as unresolved.
+- Completion:
+
+### LIVE-03 Configure Uptime Monitoring and Alerts
+
+- Status: `blocked`
+- Owner: `unassigned`
+- Depends On: `LIVE-01`
+- Summary: Create the external uptime monitor checks and route alerts to the correct owner destination.
+- Acceptance: Public monitors are active for the core routes, alert delivery is confirmed, and the launch docs no longer list uptime monitoring as unresolved.
+- Completion:
+
+### LIVE-04 Finish Manual Launch QA
+
+- Status: `todo`
+- Owner: `unassigned`
+- Depends On: `LIVE-01`
+- Summary: Complete the remaining manual checks that require browser and inbox validation outside the current environment.
+- Acceptance: The live contact form delivery is confirmed end to end, key pages are checked on real devices or browsers, and any remaining launch issues are either fixed or explicitly accepted.
+- Completion:
+
 ## Completed Work
 
 Add all `done` tasks here.
+
+### LIVE-01 Validate Public Launch Baseline
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `LAUNCH-03`
+- Summary: Check the live Cloudflare Pages deployment on the public host and record which launch-baseline items are now confirmed versus still pending.
+- Acceptance: The repo documents the results of the public-host validation pass, including HTTPS behavior, public route reachability, and any newly discovered launch blockers.
+- Completion: Verified on June 20, 2026 that `https://hcww.net/`, `/contact/`, `/robots.txt`, and `/sitemap.xml` returned `200`, confirmed `http://hcww.net/` redirects to `https://hcww.net/`, and documented that `https://www.hcww.net/` did not resolve during the live check.
 
 ### LAUNCH-01 Replace Launch-Direction Contact Flow with Hosted Submission Path
 
