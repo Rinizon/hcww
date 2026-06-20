@@ -8,12 +8,21 @@ const navigationItems = [
 ];
 
 function renderHeader(currentPage) {
+  const siteMode = document.body.dataset.siteMode || "";
   const links = navigationItems
     .map(({ slug, href, label }) => {
       const current = slug === currentPage ? ' aria-current="page"' : "";
       return `<a href="${href}"${current}>${label}</a>`;
     })
     .join("");
+  const navMarkup =
+    siteMode === "coming-soon"
+      ? ""
+      : `
+        <nav class="site-nav" aria-label="Primary navigation">
+          ${links}
+        </nav>
+      `;
 
   return `
     <header class="site-header">
@@ -25,9 +34,7 @@ function renderHeader(currentPage) {
             <span class="brand__tagline">Boerne, Texas | Websites, IT support, and practical technical guidance</span>
           </span>
         </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          ${links}
-        </nav>
+        ${navMarkup}
       </div>
     </header>
   `;
