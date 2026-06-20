@@ -11,7 +11,7 @@ Validated on June 20, 2026:
 - `https://hcww.net/robots.txt` returned `200 OK`.
 - `https://hcww.net/sitemap.xml` returned `200 OK`.
 - `http://hcww.net/` redirected with `301 Moved Permanently` to `https://hcww.net/`.
-- `https://www.hcww.net/` did not resolve during the live validation pass, so alternate-host behavior is not yet confirmed.
+- `https://www.hcww.net/` returned `301 Moved Permanently` to `https://hcww.net/`.
 
 ## Resolved in This Pass
 
@@ -25,7 +25,6 @@ The items still blocking a confident public launch are:
 
 - production analytics account setup and script installation
 - uptime monitoring account setup with alert routing
-- decision and validation for alternate-host behavior such as `www` if that hostname is expected to redirect to the apex domain
 - final public broken-link checks outside the current environment
 
 User-confirmed complete on June 20, 2026:
@@ -35,4 +34,4 @@ User-confirmed complete on June 20, 2026:
 
 ## Recommendation
 
-The site is publicly reachable on Cloudflare Pages and the primary HTTPS route is working. The next pass should focus on the external service accounts, the `www` redirect decision, and any remaining public broken-link review.
+The site is publicly reachable on Cloudflare Pages and the primary HTTPS route is working. The next pass should focus on the external service accounts and any remaining public broken-link review.

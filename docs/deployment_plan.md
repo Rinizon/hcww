@@ -23,7 +23,7 @@ Use Cloudflare Pages for the live production site.
 
 - Connect the production branch to the primary Pages project
 - Point `hcww.net` to Cloudflare-managed DNS for the live site
-- Decide whether `www.hcww.net` should redirect to the apex domain or remain unset
+- Redirect `www.hcww.net` permanently to `https://hcww.net/`
 
 ## Deployment Flow
 
@@ -70,7 +70,6 @@ Completed on the live host:
 
 Still pending:
 
-- Decide and validate alternate host behavior for `www.hcww.net`
 - Final public broken-link checks outside the current environment
 
 User-confirmed complete on June 20, 2026:

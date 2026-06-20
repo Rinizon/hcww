@@ -61,15 +61,6 @@ Keep the highest-priority ready work at the top so agents can claim it quickly.
 - Acceptance: Public monitors are active for the core routes, alert delivery is confirmed, and the launch docs no longer list uptime monitoring as unresolved.
 - Completion:
 
-### LIVE-05 Configure `www` Redirect to Apex Domain
-
-- Status: `blocked`
-- Owner: `unassigned`
-- Depends On: `LIVE-01`
-- Summary: Configure Cloudflare so `https://www.hcww.net/` redirects permanently to `https://hcww.net/`.
-- Acceptance: `https://www.hcww.net/` resolves publicly and returns a permanent redirect to the apex domain without breaking the live Pages site.
-- Completion:
-
 ## Completed Work
 
 Add all `done` tasks here.
@@ -91,6 +82,15 @@ Add all `done` tasks here.
 - Summary: Complete the remaining manual checks that require browser and inbox validation outside the current environment.
 - Acceptance: The live contact form delivery is confirmed end to end, key pages are checked on real devices or browsers, and any remaining launch issues are either fixed or explicitly accepted.
 - Completion: User confirmed completion of the live contact-form, browser, and device QA checks on June 20, 2026.
+
+### LIVE-05 Configure `www` Redirect to Apex Domain
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `LIVE-01`
+- Summary: Configure Cloudflare so `https://www.hcww.net/` redirects permanently to `https://hcww.net/`.
+- Acceptance: `https://www.hcww.net/` resolves publicly and returns a permanent redirect to the apex domain without breaking the live Pages site.
+- Completion: Verified on June 20, 2026 that `https://www.hcww.net/` returned `301` with `Location: https://hcww.net/`.
 
 ### LAUNCH-01 Replace Launch-Direction Contact Flow with Hosted Submission Path
 
