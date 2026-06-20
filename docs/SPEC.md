@@ -47,6 +47,24 @@ Keep the highest-priority ready work at the top so agents can claim it quickly.
 
 Add all `done` tasks here.
 
+### SEO-01 Add Social Preview and Icon Asset Coverage
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `POST-02`
+- Summary: Add a branded social preview image, favicon coverage, and manifest references so the site looks complete in browsers and shared links.
+- Acceptance: The route set references a default social preview image plus favicon/manifest assets, and the new assets are stored in the repo under stable public paths.
+- Completion: Added a branded social preview image, sitewide favicon and manifest references, `assets/branding/favicon.svg`, and `site.webmanifest` for the public route set.
+
+### SEO-02 Add Structured Article Metadata and Sitemap Freshness
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `SEO-01`
+- Summary: Add article schema and sitemap freshness metadata so blog content has stronger crawl and rich-result signals.
+- Acceptance: Blog posts include article-oriented structured metadata, the sitemap includes `lastmod` coverage, and related SEO docs reflect the improved setup.
+- Completion: Added `Article` JSON-LD to the three blog posts and added `lastmod` coverage across `sitemap.xml`.
+
 ### POST-01 Submit Sitemap to Search Engines
 
 - Status: `done`

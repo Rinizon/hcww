@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Hill Country Web Works</title>
+  <desc id="desc">Stylized hill and tree mark for Hill Country Web Works.</desc>
+  <rect width="256" height="256" rx="52" fill="#f8f6f4" />
+  <path
+    d="M34 158c26-20 52-31 78-31 33 0 65 12 110 38"
+    fill="none"
+    stroke="#617164"
+    stroke-linecap="round"
+    stroke-width="13"
+  />
+  <path
+    d="M67 166c16-14 34-21 53-21 22 0 43 8 69 25"
+    fill="none"
+    stroke="#7a1e2c"
+    stroke-linecap="round"
+    stroke-width="10"
+  />
+  <path
+    d="M131 69c-22 0-41 18-41 41 0 6 1 12 4 17-9-2-18-2-28 0 7 6 14 10 23 12-8 1-15 4-21 8 17 3 32 2 45-4 10 5 21 8 34 8 17 0 32-4 44-12-8-4-15-6-24-8 10-2 19-6 28-13-11-1-21 0-31 2 5-6 7-13 7-21 0-22-18-40-40-40z"
+    fill="#617164"
+  />
+  <rect x="124" y="118" width="10" height="28" rx="5" fill="#7a1e2c" />
+</svg>

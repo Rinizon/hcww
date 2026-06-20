@@ -1,0 +1,16 @@
+{
+  "name": "Hill Country Web Works",
+  "short_name": "HCWW",
+  "description": "Websites, IT support, and practical technical guidance for Hill Country businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f6f4",
+  "theme_color": "#7a1e2c",
+  "icons": [
+    {
+      "src": "/assets/branding/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
