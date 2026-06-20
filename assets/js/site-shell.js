@@ -50,8 +50,8 @@ function renderFooter() {
         <div class="stack">
           <p><strong>Boerne, Texas</strong></p>
           <p>Serving Boerne, Fair Oaks Ranch, Comfort, Kerrville, Fredericksburg, Bulverde, and nearby communities.</p>
-          <p>robert@hcww.net</p>
-          <p>(830) 431-0005</p>
+          <p><a href="mailto:robert@hcww.net">robert@hcww.net</a></p>
+          <p><a href="tel:+18304310005">(830) 431-0005</a></p>
           <p>&copy; ${year} Hill Country Web Works</p>
         </div>
       </div>
@@ -118,6 +118,16 @@ function mountContactForm() {
       "success",
     );
     window.location.href = mailtoHref;
+  });
+
+  form.querySelectorAll("input, select, textarea").forEach((field) => {
+    field.addEventListener("input", () => {
+      if (!status.hidden && status.dataset.state === "error") {
+        status.hidden = true;
+        status.textContent = "";
+        delete status.dataset.state;
+      }
+    });
   });
 }
 

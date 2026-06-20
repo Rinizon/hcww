@@ -16,6 +16,7 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://hcww.net/contact/" />
+    <meta property="og:locale" content="en_US" />
     <link rel="canonical" href="https://hcww.net/contact/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +24,21 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Montserrat:wght@600;700;800&amp;family=Playfair+Display:wght@600&amp;display=swap"
       rel="stylesheet"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Hill Country Web Works",
+        "url": "https://hcww.net/contact/",
+        "mainEntity": {
+          "@type": "ProfessionalService",
+          "name": "Hill Country Web Works",
+          "email": "robert@hcww.net",
+          "telephone": "+1-830-431-0005",
+          "areaServed": "Texas Hill Country"
+        }
+      }
+    </script>
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <script src="/assets/js/site-shell.js" defer></script>
   </head>
@@ -88,11 +104,11 @@
             <div class="contact-methods">
               <div class="contact-method">
                 <span>Phone</span>
-                <p>(830) 431-0005</p>
+                <p><a href="tel:+18304310005">(830) 431-0005</a></p>
               </div>
               <div class="contact-method">
                 <span>Email</span>
-                <p>robert@hcww.net</p>
+                <p><a href="mailto:robert@hcww.net">robert@hcww.net</a></p>
               </div>
               <div class="contact-method">
                 <span>Business hours</span>
@@ -116,7 +132,7 @@
               Helpful details include your business type, current challenge, timing, and what a
               successful outcome would look like.
             </p>
-            <p class="form-status" data-contact-status hidden aria-live="polite"></p>
+            <p class="form-status" data-contact-status hidden aria-live="polite" role="status"></p>
             <ul class="plain-list">
               <li>Website lead: mention the kind of site you need and any timeline goals.</li>
               <li>Support lead: mention the recurring issue, affected systems, and urgency.</li>

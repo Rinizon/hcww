@@ -43,11 +43,38 @@ Notes:
 Add all new `todo`, `in_progress`, and `blocked` tasks in this section.
 Keep the highest-priority ready work at the top so agents can claim it quickly.
 
-No active tasks. Add new `todo`, `in_progress`, or `blocked` work here when Phase 7 priorities are ready to queue.
+No active tasks. Add new `todo`, `in_progress`, or `blocked` work here when new launch or post-launch priorities are ready to queue.
 
 ## Completed Work
 
 Add all `done` tasks here.
+
+### PH7-01 Strengthen On-Page SEO and Local Signals
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH6-04`
+- Summary: Improve metadata, internal local signals, and crawlable launch details so the core pages are better prepared for search and local discovery.
+- Acceptance: Core pages include stronger local search cues, consistent metadata coverage, and any needed sitewide crawlable updates for the current route set.
+- Completion: Added `og:locale` coverage across the route set, JSON-LD structured data to the homepage and Contact page, and verified sitemap coverage for the current public routes.
+
+### PH7-02 Polish Accessibility and Frontend Readiness
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH6-04`
+- Summary: Apply the most important accessibility and frontend quality fixes that can be completed within the current static site approach.
+- Acceptance: The site includes meaningful accessibility polish, cleaner interaction states, and frontend adjustments that improve launch readiness without changing the chosen stack.
+- Completion: Added reduced-motion handling, better contact link semantics, status-message accessibility improvements, and cleaner interaction behavior in the shared shell and contact flow.
+
+### PH7-03 Create Launch Readiness Audit and Checklist
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH7-01`, `PH7-02`
+- Summary: Review the site against the Phase 7 goals and produce a clear checklist of what is complete, what was validated, and what still blocks launch.
+- Acceptance: The repo contains a concise launch-readiness audit that covers SEO, accessibility, broken-link risk, route coverage, and remaining blockers for public release.
+- Completion: Added `docs/phase7_launch_readiness_audit.md` with the Phase 7 outcome review, launch checklist, source-level validation notes, and remaining launch blockers.
 
 ### PH6-01 Implement Contact Form Behavior and Inquiry Flow
 
