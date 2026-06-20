@@ -6,17 +6,23 @@
     <title>Contact | Hill Country Web Works</title>
     <meta
       name="description"
-      content="Contact Hill Country Web Works to start a website project, discuss IT support, or book a consultation."
+      content="Contact Hill Country Web Works to discuss a website project, managed IT support, or technical consulting for your Hill Country business."
     />
     <meta name="theme-color" content="#7A1E2C" />
     <meta property="og:title" content="Contact | Hill Country Web Works" />
     <meta
       property="og:description"
-      content="Contact Hill Country Web Works to start a website project, discuss IT support, or book a consultation."
+      content="Reach out to Hill Country Web Works for a practical conversation about websites, support, or technical problem-solving."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://hcww.net/contact/" />
     <link rel="canonical" href="https://hcww.net/contact/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Montserrat:wght@600;700;800&amp;family=Playfair+Display:wght@600&amp;display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <script src="/assets/js/site-shell.js" defer></script>
   </head>
@@ -25,21 +31,49 @@
     <div data-site-header></div>
     <main id="main-content" class="section">
       <div class="shell stack">
-        <div class="page-intro">
+        <div class="page-intro page-intro--wide">
           <p class="eyebrow">Contact</p>
           <h1>Start with a simple conversation.</h1>
           <p class="lead">
-            Tell us what you need help with and we can map out the next best step together.
+            Reach out if you need a new website, recurring support, or help solving a technical
+            problem that is slowing the business down. The first step is low pressure and
+            practical.
           </p>
         </div>
-        <div class="split">
-          <div class="card">
-            <h2>Contact details</h2>
-            <p>Phone: (830) 431-0005</p>
-            <p>Email: robert@hcww.net</p>
-            <p>Hours: Standard business hours with emergency support available.</p>
-          </div>
+
+        <section class="contact-grid">
+          <article class="card stack">
+            <div class="section-heading">
+              <p class="eyebrow">Contact options</p>
+              <h2>Use whatever method is easiest.</h2>
+              <p>
+                If you are not sure how to describe the issue yet, that is okay. A short summary
+                is enough to get the conversation started.
+              </p>
+            </div>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <span>Phone</span>
+                <p>(830) 431-0005</p>
+              </div>
+              <div class="contact-method">
+                <span>Email</span>
+                <p>robert@hcww.net</p>
+              </div>
+              <div class="contact-method">
+                <span>Business hours</span>
+                <p>Standard business hours, with emergency support available at premium rates.</p>
+              </div>
+            </div>
+          </article>
+
           <form class="card form" aria-label="Contact form">
+            <p class="eyebrow">Send a message</p>
+            <h2>Tell us what you need help with.</h2>
+            <p class="muted">
+              Helpful details include your business type, current challenge, timing, and what a
+              successful outcome would look like.
+            </p>
             <label>
               Name
               <input type="text" name="name" />
@@ -50,11 +84,31 @@
             </label>
             <label>
               How can we help?
-              <textarea name="message" rows="5"></textarea>
+              <textarea name="message" rows="6"></textarea>
             </label>
             <button class="button button--primary" type="button">Send Inquiry</button>
           </form>
-        </div>
+        </section>
+
+        <section class="detail-grid">
+          <article class="info-panel">
+            <p class="eyebrow">Good first questions</p>
+            <ul class="plain-list">
+              <li>I need a website and I am not sure where to begin.</li>
+              <li>Our current site needs updates, hosting, or a refresh.</li>
+              <li>We keep having email, DNS, cloud, or Wi-Fi problems.</li>
+              <li>I need someone experienced to help troubleshoot a larger issue.</li>
+            </ul>
+          </article>
+          <article class="note-panel">
+            <p class="eyebrow">What happens next</p>
+            <h2>Clear follow-up and practical next steps.</h2>
+            <p>
+              After the initial contact, HCWW can help clarify the scope, recommend the right
+              starting point, and outline what the next step should be.
+            </p>
+          </article>
+        </section>
       </div>
     </main>
     <div data-site-footer></div>

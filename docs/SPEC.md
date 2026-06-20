@@ -43,6 +43,78 @@ Notes:
 Add all new `todo`, `in_progress`, and `blocked` tasks in this section.
 Keep the highest-priority ready work at the top so agents can claim it quickly.
 
+### PH2-01 Finalize Phase 2 Content Strategy
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `none`
+- Summary: Convert the Phase 2 brand, business, and site structure guidance into an approved content outline for the homepage, About, Services, Pricing, and Contact pages.
+- Acceptance: The repo documents the exact section order, key messages, and CTA intent for each Phase 2 page so implementation can proceed without inventing copy structure during build.
+- Completion: Added `docs/phase2_content_strategy.md` with page-by-page section order, CTA intent, reusable trust themes, and voice guardrails for the five Phase 2 pages.
+
+### PH2-02 Apply Brand Typography and Visual Direction
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH2-01`
+- Summary: Refine the shared visual system so the live site more fully reflects the brand style guide for typography, color use, spacing, and overall presentation.
+- Acceptance: Shared styles and shell components visibly align with `docs/brand_style.md`, including the selected heading and body font strategy, stronger brand hierarchy, and a more intentional Hill Country visual feel across core templates.
+- Completion: Reworked the shared shell and stylesheet with Montserrat, Inter, Playfair Display, expanded brand treatments, stronger section patterns, and a more intentional Hill Country visual direction.
+
+### PH2-03 Rewrite Homepage Messaging and Trust Blocks
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH2-01`, `PH2-02`
+- Summary: Update the homepage copy and section structure to clearly express the value proposition, services snapshot, differentiators, and primary calls to action.
+- Acceptance: The homepage presents approved Phase 2 messaging for hero, service summary, trust-building content, and final CTA, with copy that matches the documented brand voice and supports a clear visitor path.
+- Completion: Rewrote `index.html` with a new hero, founder trust snapshot, service overview cards, differentiator blocks, service-area messaging, and consultation-focused CTAs.
+
+### PH2-04 Build Founder Story and Local Identity Content
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH2-01`, `PH2-02`
+- Summary: Expand the About page to present the founder story, local roots, enterprise background, values, and working style in a trust-building format.
+- Acceptance: The About page includes clear sections for founder background, mission or values, differentiators, and a relationship-oriented CTA that reflects the business plan and site structure guidance.
+- Completion: Expanded `about/index.html` with the founder narrative, mission and values framing, local relationship positioning, and a direct trust-building CTA.
+
+### PH2-05 Align Services, Pricing, and Contact Messaging
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH2-01`, `PH2-02`
+- Summary: Refine the Services, Pricing, and Contact pages so their copy, summaries, and CTAs use consistent positioning and set up later detail-page work.
+- Acceptance: The Services, Pricing, and Contact pages use approved voice and tone, clearly describe the core offerings and pricing approach, reinforce trust, and hand visitors to the next action without placeholder-level messaging.
+- Completion: Rewrote the Services, Pricing, and Contact pages with clearer positioning, detailed service and pricing summaries, low-pressure contact messaging, and consistent consultation-oriented CTAs.
+
+### PH2-06 Create Reusable Trust and CTA Patterns
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH2-03`, `PH2-04`, `PH2-05`
+- Summary: Establish reusable content and UI patterns for differentiators, reassurance copy, trust statements, and calls to action that can be reused in later phases.
+- Acceptance: The codebase includes shared page patterns or section treatments for trust signals and CTAs that are already applied on the Phase 2 pages and can be reused on future service and proof pages without duplicating structure decisions.
+- Completion: Added reusable hero, trust, metric, quote, process, contact, pricing, and CTA patterns in `assets/css/styles.css` and applied them across the core Phase 2 pages.
+
+### PH2-07 Prepare Brand Assets and Contact Source of Truth
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH2-01`
+- Summary: Gather or document the required logo direction, imagery plan, contact details, and any placeholder asset decisions needed to support the brand implementation work.
+- Acceptance: The repo records the current source of truth for logo usage, imagery expectations, contact details, and any approved placeholders or missing assets so Phase 3 page work is not blocked by ambiguity.
+- Completion: Added `docs/brand_assets_source_of_truth.md` to capture the current logo placeholder direction, imagery guidance, CTA language, and the authoritative contact details used in the site.
+
+### PH2-08 Validate Phase 2 Outcomes and Queue Phase 3 Follow-Ups
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH2-03`, `PH2-04`, `PH2-05`, `PH2-06`, `PH2-07`
+- Summary: Review the completed Phase 2 work against `docs/phases.md`, `docs/brand_style.md`, and `docs/AGENTS.md`, then capture any remaining gaps before core page build continues.
+- Acceptance: Phase 2 deliverables are verified in the running site and documentation, and any unresolved issues are either fixed or turned into clearly scoped follow-up tasks for Phase 3.
+- Completion: Fetched `origin` to confirm the branch is current, validated local HTTP responses for the updated home and pricing routes, and reviewed the refreshed Phase 2 pages and documentation for consistency before leaving the queue ready for Phase 3.
+
 ## Completed Work
 
 Add all `done` tasks here.
