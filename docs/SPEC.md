@@ -47,6 +47,15 @@ Keep the highest-priority ready work at the top so agents can claim it quickly.
 
 Add all `done` tasks here.
 
+### LIVE-06 Complete External Post-Launch Route Audit
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `LIVE-01`, `LIVE-04`, `LIVE-05`
+- Summary: Re-check the core public routes and redirects on the live host after launch so the remaining broken-link follow-up is either resolved or documented accurately.
+- Acceptance: The repo contains a concise post-launch audit confirming the public route set and redirect behavior, and the launch docs no longer list the broken-link sweep as unresolved if no issues are found.
+- Completion: Added `docs/post_launch_audit.md` and verified on June 20, 2026 that the main public routes, robots, sitemap, HTTP-to-HTTPS redirect, and `www` redirect all responded successfully.
+
 ### LIVE-03 Configure Uptime Monitoring and Alerts
 
 - Status: `done`

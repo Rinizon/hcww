@@ -21,9 +21,7 @@ Validated on June 20, 2026:
 
 ## Remaining Launch Blockers
 
-The items still blocking a confident public launch are:
-
-- final public broken-link checks outside the current environment
+No blocking launch issues remain after the June 20, 2026 post-launch validation sweep.
 
 User-confirmed complete on June 20, 2026:
 
@@ -34,4 +32,4 @@ User-confirmed complete on June 20, 2026:
 
 ## Recommendation
 
-The site is publicly reachable on Cloudflare Pages and the primary HTTPS route is working. The next pass should focus on any remaining public broken-link review and any optional expansion of route-level uptime checks.
+The site is publicly reachable on Cloudflare Pages, the primary route set is responding, and the main operational launch tasks are complete. The next work should be treated as normal post-launch improvement rather than launch-blocker cleanup.
