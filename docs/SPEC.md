@@ -43,11 +43,56 @@ Notes:
 Add all new `todo`, `in_progress`, and `blocked` tasks in this section.
 Keep the highest-priority ready work at the top so agents can claim it quickly.
 
-No active tasks. Add new `todo`, `in_progress`, or `blocked` work here when Phase 4 priorities are ready to queue.
+No active tasks. Add new `todo`, `in_progress`, or `blocked` work here when Phase 5 priorities are ready to queue.
 
 ## Completed Work
 
 Add all `done` tasks here.
+
+### PH4-01 Build Website Design and Hosting Detail Page
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH3-06`
+- Summary: Create the dedicated sales page for website design and hosting with scope, process, feature, pricing, and CTA content tailored to website leads.
+- Acceptance: The site includes a dedicated website services page that clearly explains deliverables, ideal fit, process, pricing guidance, and the next step for starting a website project.
+- Completion: Added `services/website-design-hosting/index.html` with deliverables, fit guidance, process, pricing context, and a website-specific CTA path.
+
+### PH4-02 Build Managed IT Support Detail Page
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH3-06`
+- Summary: Create the dedicated managed IT support page with plain-English explanations of support tiers, included services, business value, pricing ranges, and CTA flow.
+- Acceptance: The site includes a dedicated managed IT page that helps small-business visitors understand what support looks like, what is included, and how to start a support conversation.
+- Completion: Added `services/managed-it-support/index.html` with plain-English managed IT framing, tier ranges, included support areas, business-value messaging, and a support-focused CTA.
+
+### PH4-03 Build Cloud and Technical Consulting Detail Page
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH3-06`
+- Summary: Create the dedicated cloud and technical consulting page that explains advanced support in approachable language while qualifying the right leads.
+- Acceptance: The site includes a dedicated consulting page covering common problem types, technical strengths, engagement style, pricing context, and a CTA for booking technical help.
+- Completion: Added `services/cloud-technical-consulting/index.html` with common consulting use cases, engagement flow, hourly guidance, and a technical-consultation CTA.
+
+### PH4-04 Align Pricing and Service Routing
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH4-01`, `PH4-02`, `PH4-03`
+- Summary: Update the Services overview, Pricing page, and key internal links so service-detail pages and pricing ranges reinforce each other.
+- Acceptance: The overview and pricing pages route visitors cleanly into the correct service-detail pages, and the pricing language remains consistent across the site.
+- Completion: Updated `index.html`, `services/index.html`, and `pricing/index.html` so the core funnel now routes into the dedicated service pages with consistent pricing-aligned CTAs.
+
+### PH4-05 Validate Phase 4 Sales Pages and Capture Phase 5 Dependencies
+
+- Status: `done`
+- Owner: `Codex`
+- Depends On: `PH4-01`, `PH4-02`, `PH4-03`, `PH4-04`
+- Summary: Review the finished service-detail and pricing pages as a coordinated mid-funnel experience and capture the remaining proof and local-trust needs for Phase 5.
+- Acceptance: The service-detail pages and pricing page work together as a qualified-lead path, and any remaining needs for portfolio, testimonials, or service-area proof are documented clearly.
+- Completion: Added `docs/phase4_sales_pages_audit.md`, confirmed pricing consistency across the new detail pages, validated the updated Pricing route locally with `200 OK`, and documented Phase 5 dependencies around proof and local-trust content.
 
 ### PH3-01 Audit Core Marketing Pages Against Phase 3 Goals
 
